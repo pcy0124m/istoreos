@@ -1,4 +1,9 @@
 #!/bin/bash
+echo "==== diy-part1 开始：配置Github镜像加速 ===="
+git config --global url."https://mirror.ghproxy.com/https://github.com/".insteadOf "https://github.com/"
+git config --global --get-regexp url
+echo "==== diy-part1 完成 ===="
+
 #
 # Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
 #
