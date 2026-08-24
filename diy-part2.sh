@@ -1,4 +1,9 @@
 #!/bin/bash
+echo "==== diy-part2 替换下载源为中科大镜像 ===="
+cd openwrt
+sed -i 's/downloads.openwrt.org/mirrors.ustc.edu.cn\/openwrt/g' repositories.conf
+echo "==== diy-part2 执行完毕 ===="
+
 #
 # Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
 #
